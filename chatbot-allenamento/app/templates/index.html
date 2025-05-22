@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Allenamento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/workout_card.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title">
+                <i class="fa-solid fa-dumbbell"></i> Chat Salvate
+            </div>
+        </div>
+        <button class="new-chat-btn" id="newChatBtn">
+            <i class="fa-solid fa-plus"></i> Nuova Chat
+        </button>
+        <div class="chat-list" id="chatList">
+            <!-- Le chat salvate verranno inserite qui dinamicamente -->
+            <div class="no-chats" id="noChatsMsg">
+                <p>Nessuna chat salvata</p>
+            </div>
+        </div>
+        <button class="delete-all-btn" id="deleteAllBtn">
+            <i class="fa-solid fa-trash"></i> Elimina tutte le chat
+        </button>
+    </div>
+
+    <div class="main-content">
+        <div class="chat-header">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="current-chat-title" id="currentChatTitle">Nuova Chat</div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <h2>🏋️ Benvenuto nel Chatbot Allenamento!</h2>
+                <p>Sono il tuo assistente personale per la creazione di schede di allenamento personalizzate.</p>
+                <p>Dimmi i tuoi obiettivi, il tuo livello di esperienza e quanti giorni vuoi allenarti, e creerò una scheda perfetta per te!</p>
+                <p><strong>Esempi di richieste:</strong></p>
+                <ul style="text-align: left; margin-top: 10px; display: inline-block;">
+                    <li>"Sono un principiante, voglio iniziare ad allenarmi 3 volte a settimana"</li>
+                    <li>"Voglio aumentare la forza, ho esperienza intermedia"</li>
+                    <li>"Come si esegue correttamente lo squat?"</li>
+                    <li>"Scheda per dimagrimento, 4 giorni a settimana"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <textarea
+                class="chat-input"
+                id="chatInput"
+                placeholder="Scrivi un messaggio..."
+                rows="1"
+                autofocus
+            ></textarea>
+            <button class="send-button" id="sendBtn" disabled>
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/workout_display.js"></script>
+</body>
+</html>

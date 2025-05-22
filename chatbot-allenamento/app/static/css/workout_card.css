@@ -1,0 +1,463 @@
+/* Workout Card Styling */
+.workout-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: var(--radius-lg);
+    margin: 15px 0;
+    box-shadow: var(--shadow-lg);
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.workout-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-section li:last-child {
+    border-bottom: none;
+}
+
+.profile-section strong {
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.workout-day {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin: 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: var(--transition);
+}
+
+.workout-day:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.workout-day h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #fbbf24;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid rgba(251, 191, 36, 0.3);
+    padding-bottom: 8px;
+}
+
+.workout-day h4 {
+    font-size: 1.1rem;
+    margin: 15px 0 10px 0;
+    color: #93c5fd;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.workout-day ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.workout-day li {
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.workout-day li::before {
+    content: "•";
+    color: #fbbf24;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.exercise-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-table th {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fbbf24;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.exercise-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: top;
+}
+
+.exercise-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.exercise-table tr:last-child td {
+    border-bottom: none;
+}
+
+.exercise-table strong {
+    color: #fbbf24;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.exercise-table small {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    display: block;
+    margin-top: 4px;
+}
+
+.exercise-table em {
+    color: #93c5fd;
+    font-style: italic;
+}
+
+.nutrition-section {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nutrition-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ecfdf5;
+}
+
+.nutrition-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nutrition-section li:last-child {
+    border-bottom: none;
+}
+
+.nutrition-section strong {
+    color: #bbf7d0;
+    font-weight: 600;
+}
+
+.progression-section {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progression-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fef3c7;
+}
+
+.progression-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.progression-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.progression-section li:last-child {
+    border-bottom: none;
+}
+
+.progression-section strong {
+    color: #fde68a;
+    font-weight: 600;
+}
+
+.notes-section {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin: 20px 0;
+}
+
+.notes-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fecaca;
+}
+
+.notes-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notes-section li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(239, 68, 68, 0.1);
+}
+
+.notes-section li:last-child {
+    border-bottom: none;
+}
+
+.notes-section li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* Workout Content Styling */
+.workout-content {
+    line-height: 1.7;
+}
+
+.workout-content h2 {
+    margin-bottom: 20px;
+}
+
+.workout-content h3 {
+    margin: 20px 0 15px 0;
+}
+
+.workout-content h4 {
+    margin: 15px 0 10px 0;
+}
+
+.workout-content p {
+    margin-bottom: 12px;
+}
+
+.workout-content ul {
+    margin-bottom: 15px;
+}
+
+.workout-content li {
+    margin-bottom: 5px;
+}
+
+/* Special Elements */
+.workout-highlight {
+    background: rgba(251, 191, 36, 0.2);
+    padding: 15px;
+    border-radius: var(--radius-md);
+    border-left: 4px solid #fbbf24;
+    margin: 15px 0;
+}
+
+.workout-tip {
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 15px;
+    border-radius: var(--radius-md);
+    margin: 15px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.workout-tip::before {
+    content: "💡";
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.workout-warning {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 15px;
+    border-radius: var(--radius-md);
+    margin: 15px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.workout-warning::before {
+    content: "⚠️";
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Animation for tables */
+@keyframes fadeInTable {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exercise-table {
+    animation: fadeInTable 0.6s ease-out 0.3s both;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .workout-card {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    
+    .workout-title {
+        font-size: 1.5rem;
+    }
+    
+    .exercise-table {
+        font-size: 0.9rem;
+    }
+    
+    .exercise-table th,
+    .exercise-table td {
+        padding: 10px 8px;
+    }
+    
+    .workout-day {
+        padding: 15px;
+    }
+    
+    .profile-section,
+    .nutrition-section,
+    .progression-section,
+    .notes-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .exercise-table {
+        font-size: 0.8rem;
+    }
+    
+    .exercise-table th,
+    .exercise-table td {
+        padding: 8px 6px;
+    }
+    
+    /* Stack table on very small screens */
+    .exercise-table,
+    .exercise-table thead,
+    .exercise-table tbody,
+    .exercise-table th,
+    .exercise-table td,
+    .exercise-table tr {
+        display: block;
+    }
+    
+    .exercise-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .exercise-table tr {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: var(--radius-sm);
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .exercise-table td {
+        border: none;
+        padding: 8px 10px;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    .exercise-table td:before {
+        content: attr(data-label) ": ";
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        font-weight: bold;
+        color: #fbbf24;
+    }
+}
